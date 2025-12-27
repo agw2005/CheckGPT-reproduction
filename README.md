@@ -21,7 +21,7 @@ Reproduction may take up a significant amount of time, as such I recommend you u
 
 _Replace_ `X` _with the desired checkpoint number._
 
-_The reproduction primarily uses python3.10.2 virtual environment to install extra dependencies to run the checkpoint in the background._
+_Requires `jupyter-core` via apt and `nbconvert` via pip._
 
 ---
 
