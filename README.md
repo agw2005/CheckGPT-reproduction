@@ -16,7 +16,7 @@ Reproduction may take up a significant amount of time, as such I recommend you u
 1. `tmux new -s checkpoint_X`
 2. `jupyter nbconvert --to notebook --execute "./repro_checkpoint_X.ipynb" --inplace --ExecutePreprocessor.timeout=0`
 3. While it is running, do `Ctrl+b` then `d` to exit the tmux session. You can safely close the terminal and come back later to check if the notebook has finished running.
-4. You can check the session by using `tmux attach-instance -t checkpoint_X` and see if if it's still running.
+4. You can check the session by using `tmux attach-session -t checkpoint_X` and see if if it's still running.
 5. After the notebook has finished running all the cells, kill the session with `tmux kill-session -t checkpoint_X` (`tmux ls` should be able to confirm that the session was killed).
 
 _Replace_ `X` _with the desired checkpoint number._
