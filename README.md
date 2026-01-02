@@ -8,18 +8,17 @@
 
 ## Overview
 
-This repository contains a reproduction attempt for the experiments from the ACM-CCS 2024 publication. The project focuses on constructing solutions to detect ChatGPT-generated content in academic writings in order to prevent it's abusive usage in formal publications. Such solution is needed to enforce policies introduced by academia regarding the usage of LLM-generated content. This reproduction pipeline is specialized for Chameleon Cloud.
+This repository contains a reproduction attempt for the experiments from the ACM-CCS 2024 publication. The project focuses on constructing solutions to detect ChatGPT-generated content in academic writings in order to prevent it's abusive usage in formal publications. Such solution is needed to enforce policies introduced by academia regarding the usage of LLM-generated content.
 
-The pipeline for the reproduction are divided into different checkpoints under the format `repro_checkpoint_X.ipynb`.
+The pipeline for the reproduction is in `run_reproduction.ipynb`.
 
 Reproduction may take up a significant amount of time, as such I recommend you use `tmux` to run the reproduction in the background like so...
-1. `tmux new -s checkpoint_X`
-2. `jupyter nbconvert --to notebook --execute "./repro_checkpoint_X.ipynb" --inplace --ExecutePreprocessor.timeout=0`
+1. `tmux new -s repro`
+2. `jupyter nbconvert --to notebook --execute "./run_reproduction.ipynb" --inplace --ExecutePreprocessor.timeout=0`
 3. While it is running, do `Ctrl+b` then `d` to exit the tmux session. You can safely close the terminal and come back later to check if the notebook has finished running.
-4. You can check the session by using `tmux attach-session -t checkpoint_X` and see if if it's still running.
-5. After the notebook has finished running all the cells, kill the session with `tmux kill-session -t checkpoint_X` (`tmux ls` should be able to confirm that the session was killed).
-
-_Replace_ `X` _with the desired checkpoint number._
+4. You can check the session by using `tmux attach-session -t repro` and see if if it's still running.
+5. After the notebook has finished running all the cells, kill the session with `tmux kill-session -t repro` (`tmux ls` should be able to confirm that the session was killed).
+6. It should populate the directory `./artifact_checkgpt/CheckGPT/exp` with the experiment results under the format `Train_[TRAIN DOMAIN(S)]_[TRAIN ARCHITECTURE]_Task[TRAIN TASK(S)]_Prompt[TRAIN PROMPT(S)]_Test_[TEST DOMAIN(S)]_Task[TEST TASK(S)]_Prompt[TEST PROMPT(S)]`. Each directory contains a `train.log` file. The `summarize_reproduction.ipynb` will process these training logs into human-readable format.
 
 _Requires `jupyter-core` via apt and `nbconvert` via pip._
 
