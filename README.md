@@ -2,7 +2,7 @@
 
 > **Zeyan Liu, Zijun Yao, Fengjun Li, Bo Luo**  
 > _ACM Computer and Communications Security (ACM-CCS), 2024_  
-> [[Publication](https://dl.acm.org/doi/abs/10.1145/3658644.3670392)] | [[Video](#)] | [[Original source code](https://github.com/liuzey/CheckGPT-v2)] | [[Artifacts](https://zenodo.org/records/11215222)]
+> [[Publication](https://dl.acm.org/doi/abs/10.1145/3658644.3670392)] | [[Video](https://youtu.be/XUPqlPgbLT8)] | [[Original source code](https://github.com/liuzey/CheckGPT-v2)] | [[Artifacts](https://zenodo.org/records/11215222)]
 
 ---
 
