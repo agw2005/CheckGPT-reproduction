@@ -34,7 +34,25 @@ _Requires `jupyter-core` via apt and `nbconvert` via pip._
 - **Workspace Kernel**: Python 3.10.12 Virtual Environment
 
 ### Results
-TBA
+Table 7
+
+<img width="500" alt="Screenshot 2026-01-04 124250" src="https://github.com/user-attachments/assets/ed88a30a-ac61-4c34-8d0a-3487e2240adf" />
+
+
+Table 8
+
+<img width="500" alt="Screenshot 2026-01-04 124442" src="https://github.com/user-attachments/assets/d9fc9d50-c4bd-4056-ad2c-050a0c0843e1" />
+
+
+Table 9
+
+<img width="500" alt="Screenshot 2026-01-04 124611" src="https://github.com/user-attachments/assets/6af43b8a-357e-4310-af55-421d5a505714" />
+
+
+Table 10
+
+<img width="500" alt="Screenshot 2026-01-04 124737" src="https://github.com/user-attachments/assets/3f297f8e-b586-4d79-ba0a-cca31f5cee7d" />
+
 
 ---
 
